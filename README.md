@@ -1,6 +1,6 @@
 # Git Essentials Reference
 
-Concise reference for professional developers and teams. Covers commit message conventions and essential Git commands used in day-to-day work.
+A clear, practical reference for professional developers and teams. Covers commit message conventions and essential Git commands used in day-to-day work.
 
 Focus: clarity, correctness, and practicality. Avoids deprecated or overly niche practices.
 

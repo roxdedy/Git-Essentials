@@ -4,6 +4,8 @@ Practical day-to-day commands for professional workflows. Selected for frequency
 
 ## Setup & Configuration
 
+Basic commands to install and configure Git on your machine.
+
 | Command                                | Description               | Example                                           |
 | -------------------------------------- | ------------------------- | ------------------------------------------------- |
 | git config --global user.name "Name"   | Set global author name    | git config --global user.name "Jane Doe"          |
@@ -12,6 +14,8 @@ Practical day-to-day commands for professional workflows. Selected for frequency
 | git clone <url>                        | Clone remote repository   | git clone https://github.com/user/repo.git        |
 
 ## Local Workflow
+
+Core commands for everyday committing and viewing changes.
 
 | Command                 | Description               | Example                                 |
 | ----------------------- | ------------------------- | --------------------------------------- |
@@ -23,6 +27,8 @@ Practical day-to-day commands for professional workflows. Selected for frequency
 | git diff --staged       | Show staged changes       | git diff --staged                       |
 
 ## Stashing Changes
+
+Temporarily save uncommitted work to switch context quickly.
 
 | Command                     | Description                               | Example                                  |
 | --------------------------- | ----------------------------------------- | ---------------------------------------- |
@@ -40,6 +46,8 @@ Practical day-to-day commands for professional workflows. Selected for frequency
 
 ## Branching & Merging
 
+Create, switch, and combine branches safely.
+
 | Command              | Description                | Example                     |
 | -------------------- | -------------------------- | --------------------------- |
 | git branch           | List branches              | git branch                  |
@@ -51,6 +59,8 @@ Practical day-to-day commands for professional workflows. Selected for frequency
 
 ## Remote Operations
 
+Work with remote repositories (fetch, pull, push).
+
 | Command                     | Description                                                | Example                          |
 | --------------------------- | ---------------------------------------------------------- | -------------------------------- |
 | git remote -v               | List remotes                                               | git remote -v                    |
@@ -60,6 +70,8 @@ Practical day-to-day commands for professional workflows. Selected for frequency
 | git push -u origin <branch> | Push and set upstream                                      | git push -u origin feature/login |
 
 ## Tagging Releases
+
+Mark specific commits as versions or releases.
 
 | Command                          | Description                        | Example                               |
 | -------------------------------- | ---------------------------------- | ------------------------------------- |
@@ -74,16 +86,18 @@ Practical day-to-day commands for professional workflows. Selected for frequency
 
 ## Cherry-Picking Commits
 
-| Command                              | Description                       | Example                             |
-| ------------------------------------ | --------------------------------- | ----------------------------------- |
-| git cherry-pick <commit>             | Apply a single commit             | git cherry-pick a1b2c3d             |
-| git cherry-pick <commit1>..<commit2> | Apply a range                     | git cherry-pick main~3..main~1      |
-| git cherry-pick -x <commit>          | Record original commit in message | git cherry-pick -x a1b2c3d          |
-| git cherry-pick --no-commit <commit> | Apply without committing          | git cherry-pick --no-commit a1b2c3d |
-| git cherry-pick --continue           | Continue after conflict           | git cherry-pick --continue          |
-| git cherry-pick --abort              | Abort on conflict                 | git cherry-pick --abort             |
+Use `git cherry-pick` to apply a specific commit from one branch to another. Common for backporting fixes.
+
+| Command                              | Description              | Example                             |
+| ------------------------------------ | ------------------------ | ----------------------------------- |
+| git cherry-pick <commit>             | Apply a single commit    | git cherry-pick a1b2c3d             |
+| git cherry-pick --no-commit <commit> | Apply without committing | git cherry-pick --no-commit a1b2c3d |
+| git cherry-pick --continue           | Continue after conflict  | git cherry-pick --continue          |
+| git cherry-pick --abort              | Abort on conflict        | git cherry-pick --abort             |
 
 ## Reverting Commits
+
+Safely undo changes by creating new reversing commits (preferred for shared history).
 
 | Command                         | Description                     | Example                        |
 | ------------------------------- | ------------------------------- | ------------------------------ |
@@ -96,6 +110,8 @@ Practical day-to-day commands for professional workflows. Selected for frequency
 
 ## Resetting History
 
+Move branch pointers and optionally discard changes (use carefully, local only).
+
 | Command                    | Description                                   | Example                    |
 | -------------------------- | --------------------------------------------- | -------------------------- |
 | git reset --soft <commit>  | Move HEAD, keep staging/working               | git reset --soft HEAD~1    |
@@ -107,6 +123,8 @@ Note: `ORIG_HEAD` is only available after certain operations (e.g., merge, rebas
 
 ## Reflog Recovery
 
+Recover lost commits using Git's local history log.
+
 | Command                | Description                     | Example                   |
 | ---------------------- | ------------------------------- | ------------------------- |
 | git reflog             | Show recent HEAD movements      | git reflog                |
@@ -114,6 +132,8 @@ Note: `ORIG_HEAD` is only available after certain operations (e.g., merge, rebas
 | git reset --hard <ref> | Recover to reflog entry         | git reset --hard HEAD@{3} |
 
 ## Inspection & Recovery (core)
+
+Quickly view history and discard unwanted changes.
 
 | Command            | Description             | Example                  |
 | ------------------ | ----------------------- | ------------------------ |
